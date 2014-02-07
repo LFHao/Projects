@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Shoping cart</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+       $(document).ready(function(){
+	      $("#myController").jFlow({
+		     controller: ".control", // must be class, use . sign
+		     slideWrapper : "#jFlowSlider", // must be id, use # sign
+		     slides: "#slider",  // the div where all your sliding divs are nested in
+		     selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		     width: "984px",  // this is the width for the content-slider
+		     height: "480px",  // this is the height for the content-slider
+		     duration: 400,  // time in miliseconds to transition one slide
+		     prev: ".slidprev", // must be class, use . sign
+		     next: ".slidnext", // must be class, use . sign
+		     auto: true
+	      });
+       });
+  </script>
+  <script>
+       $(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  <script>
+       $(document).ready(function() {
+	      $("select").selectBox();
+       });
+  </script>
+
+</head>
+<body>
+  <div class="container_12">
+    <div id="top">
+        <div class="grid_3">
+            <div class="phone_top">
+                Call Us +777 (100) 1234
+            </div><!-- .phone_top -->
+        </div><!-- .grid_3 -->
+        
+        <div class="grid_6">
+            <div class="welcome">
+            </div><!-- .welcome -->
+        </div><!-- .grid_6 -->
+        
+        <div class="grid_3">
+            <div class="valuta">
+                <ul>
+                    <li class="curent"><a href="#">$</a></li>
+                    <li><a href="#">&#8364;</a></li>
+                    <li><a href="#">&#163;</a></li>
+                </ul>
+            </div><!-- .valuta -->
+            
+            <div class="lang">
+                <ul>
+                    <li class="curent"><a href="#">EN</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">GM</a></li>
+                </ul>
+            </div><!-- .lang -->
+        </div><!-- .grid_3 -->
+    </div><!-- #top -->
+      
+      <div class="clear"></div>
+      
+      <header id="branding">
+          <div class="grid_3">
+              <hgroup>
+                  <h1 id="site_logo"><a href="index login.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+                  <h2 id="site_description">Online Pharmacy</h2>
+              </hgroup>
+          </div><!-- .grid_3 -->
+          
+          <div class="grid_3">
+              <form class="search">
+                  <input type="text" name="search" class="entry_form" value="" placeholder="search keywords"/>
+                  <input class="entry_img" onClick="location='catalog_grid login.html'" readonly/>
+              </form>
+          </div><!-- .grid_3 -->
+          
+          <div class="grid_6">
+              <ul id="cart_nav">
+                  <li>
+                      <a class="cart_li" href="#">Cart <span>$20.46</span></a>
+                      <ul class="cart_cont">
+                          <li class="no_border"><p>Recently added item(s)</p></li>
+                          <li>
+                              <a href="product_page1 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image1.png" alt="" title="" /></div></a>
+                              <div class="cont_cart">
+                                  <h4><a href="product_page1 login.html">Centrum Centrum Multivitamin And Multimineral Supplement Tablets</a></h4>
+                                  <div class="price">1 x $12.97</div>
+                              </div>
+                              <a title="close" class="close" href="#"></a>
+                              <div class="clear"></div>
+                          </li>
+                          
+                          <li>
+                              <a href="product_page2 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image2.png" alt="" title="" /></div></a>
+                              <div class="cont_cart">
+                                  <h4><a href="product_page2 login.html">21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</a></h4>
+                                  <div class="price">1 x $7.49</div>
+                              </div>
+                              <a title="close" class="close" href="#"></a>
+                              <div class="clear"></div>
+                          </li>
+                          <li class="no_border">
+                              <a href="shopping_cart login.html" class="view_cart">View shopping cart</a>
+                              <a href="checkout login.html" class="checkout">Procced to Checkout</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+              
+              <nav class="private">
+                  <ul>
+                      <li><a href="my_account.html">My Account</a></li>
+                      <li class="separator">|</li>
+                      <li><a href="wishlist login.html">My Wishlist</a></li>
+                      <li class="separator">|</li>
+                      <li><a href="index.html">Log Out</a></li>
+                      <li class="separator">|</li>
+                      <li><a>John Doe</a></li>
+                  </ul>
+              </nav><!-- .private -->
+          </div><!-- .grid_6 -->
+      </header><!-- #branding -->
+  </div><!-- .container_12 -->
+    
+    <div class="clear"></div>
+    
+    <div id="block_nav_primary">
+        <div class="container_12">
+            <div class="grid_12">
+                <nav class="primary">
+                    <ul>
+                        <li class="curent"><a href="index login.html">Home</a></li>
+                        
+                        <li>
+                            <a href="catalog_grid login.html">Allergy</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Asthma Care</a></li>
+                                <li><a href="catalog_grid login.html">Cleaning Products</a></li>
+                                <li><a href="catalog_grid login.html">Humidifiers &#38; Vaporizers</a></li>
+                                <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Cold &#38; Flu</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Adult Cold Medicine</a></li>
+                                <li><a href="catalog_grid login.html">Chest Rubs</a></li>
+                                <li><a href="catalog_grid login.html">Children's Cold Medicine</a></li>
+                                <li><a href="catalog_grid login.html">Cough Drops &#38; Sore Throat</a></li>
+                                <li><a href="catalog_grid login.html">Flu Fighters</a></li>
+                                <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                                <li><a href="catalog_grid login.html">Natural Remedies</a></li>
+                                <li><a href="catalog_grid login.html">Sinus Congestion &#38; Pain</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Diabetes</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Blood Test Strips</a></li>
+                                <li><a href="catalog_grid login.html">Diabetic Monitors &#38; Kits</a></li>
+                                <li><a href="catalog_grid login.html">Lancets &#38; Tips</a></li>
+                                <li><a href="catalog_grid login.html">Rubbing Alcohol</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Digestion</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Antacid Liquid</a></li>
+                                <li><a href="catalog_grid login.html">Antacid Tablets</a></li>
+                                <li><a href="catalog_grid login.html">Anti-Diarrheals</a></li>
+                                <li><a href="catalog_grid login.html">Children's Digestive Aids</a></li>
+                                <li><a href="catalog_grid login.html">Enemas</a></li>
+                                <li><a href="catalog_grid login.html">Fiber</a></li>
+                                <li><a href="catalog_grid login.html">Natural digestive remedies</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Eye Care</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Eye Drops &#38; Ointments</a></li>
+                                <li><a href="catalog_grid login.html">Lens Care</a></li>
+                                <li><a href="catalog_grid login.html">Reading Glasses</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Pain Relief</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Arthritis Pain Relief</a></li>
+                                <li><a href="catalog_grid login.html">Children's Pain Relief</a></li>
+                                <li><a href="catalog_grid login.html">Cold &#38; Hot Packs</a></li>
+                                <li><a href="catalog_grid login.html">Hemorrhoids</a></li>
+                                <li><a href="catalog_grid login.html">Menstrual Pain Relief</a></li>
+                                <li><a href="catalog_grid login.html">Migraine Relief</a></li>
+                                <li><a href="catalog_grid login.html">Natural Pain &#38; Fever Relief</a></li>
+                                <li><a href="catalog_grid login.html">Oral Pain Relief</a></li>
+                                <li><a href="catalog_grid login.html">Rubs &#38; Ointments</a></li>
+                                <li><a href="catalog_grid login.html">Sore Muscle Relief</a></li>
+                                <li><a href="catalog_grid login.html">Urinary Pain Relief</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog_grid login.html">Vitamin &#38; Supplements</a>
+                            <ul class="sub">
+                                <li><a href="catalog_grid login.html">Bone &#38; Joint</a></li>
+                                <li><a href="catalog_grid login.html">Calcium &#38; Minerals</a></li>
+                                <li><a href="catalog_grid login.html">Fish Oil &#38; Omegas</a></li>
+                                <li><a href="catalog_grid login.html">Herbs</a></li>
+                                <li><a href="catalog_grid login.html">Multivitamins</a></li>
+                                <li><a href="catalog_grid login.html">Natural Vitamins</a></li>
+                                <li><a href="catalog_grid login.html">Probiotics</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </nav><!-- .primary -->
+            </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+</div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+  
+  <div class="container_12">
+      <div class="grid_12">
+          <div class="breadcrumbs">
+              <a href="index login.html">Home</a><span>&#8250;</span>
+              <span class="current">Shopping Cart</span>
+          </div><!-- .breadcrumbs -->
+      </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+  
+  <div class="clear"></div>
+  
+  <section id="main" class="entire_width">
+    <div class="container_12">
+       <div class="grid_12">
+       <h1 class="page_title">Shopping Cart</h1>
+
+       <table class="cart_product">
+	      <tr>
+		     <th class="images"></th>
+		     <th class="bg name">Product Name</th>
+		     <th class="bg price">Unit Price</th>
+		     <th class="qty">Qty</th>
+		     <th class="bg subtotal">Subtotal</th>
+		     <th class="close"> </th>
+	      </tr>
+	      <tr>
+		     <td class="images"><a href="product_page1 login.html"><img src="images/product1/product_slid.png" alt="Product 1"></a></td>
+		     <td class="bg name"><a href="product_page1 login.html">Centrum Centrum Multivitamin And Multimineral Supplement Tablets</a></td>
+		     <td class="bg price">$12.97</td>
+		     <td class="qty"><input type="text" name="" value="1" /></td>
+		     <td class="bg subtotal">$12.97</td>
+		     <td class="close"><a title="close" class="close" href="#"></a></td>
+	      </tr>
+	      <tr>
+		     <td class="images"><a href="product_page2 login.html"><img src="images/product2/product_slid.png" alt="Product 2"></a></td>
+		     <td class="bg name"><a href="product_page2 login.html">21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</a></td>
+		     <td class="bg price">$7.49</td>
+		     <td class="qty"><input type="text" name="" value="1" /></td>
+		     <td class="bg subtotal">$7.49</td>
+		     <td class="close"><a title="close" class="close" href="#"></a></td>
+	      </tr>
+	      <tr>
+		     <td colspan="7" class="cart_but">
+			    <button class="continue" onClick="location='catalog_grid login.html'"><span>icon</span>Continue Shopping</button>
+		     </td>
+	      </tr>
+       </table>
+       </div><!-- .grid_12 -->
+
+       <div id="content_bottom">
+           
+        <div class="grid_4">
+          <div class="bottom_block discount">
+            <h3>Promotions</h3>
+            <br/><br/>
+            
+        <form>
+            <h6>You have a 5-dollar coupon available.</h6>
+	      <input type="submit" id="apply_coupon" value="Apply Coupon" />
+	    </form>
+          </div><!-- .discount -->
+        </div><!-- .grid_4 -->
+
+<div class="grid_4">
+    <div class="bottom_block estimate">
+        <h3>Estimate Shipping and Tax</h3>
+	    <form>
+            <p>
+            <strong>Country:</strong><br/>
+            <select>
+			    <option>United States</option>
+			    <option>Canada</option>
+            </select>
+            </p>
+            <p>
+            <strong>State/Province:</strong><br/>
+            <select>
+			    <option>Please select region, state or province</option>
+			    <option>PA</option>
+            </select>
+            </p>
+            <p>
+            <strong>Zip/Postal Code</strong><br/>
+            <input type="text" name="" value="" />
+            </p>
+	    </form>
+        
+    </div><!-- .estimate -->
+</div><!-- .grid_4 -->
+
+        <div class="grid_4">
+          <div class="bottom_block total">
+	      <table class="subtotal">
+		     <tr>
+			    <td>Subtotal</td><td class="price">$20.46</td>
+		     </tr>
+             <tr>
+                 <td>Tax</td><td class="price">$1.43</td>
+             </tr>
+       
+		     <tr class="grand_total">
+			    <td>Grand Total</td><td class="price">$21.89</td>
+		     </tr>
+	      </table>
+	    <button class="checkout" onClick="location='checkout login.html'">PROCEED TO CHECKOUT</button>
+            <a href="#">Checkout with Multiple Addresses</a>
+          </div><!-- .total -->
+        </div><!-- .grid_4 -->
+
+        <div class="clear"></div>
+      </div><!-- #content_bottom -->
+      <div class="clear"></div>
+
+      <div class="clear"></div>
+
+      <div class="carousel" id="following">
+        <div class="c_header">
+          <div class="grid_10">
+            <h5>Based on your selection, you may be interested in the following item:</h5>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c1" class="next arows" href="#"><span>Next</span></a>
+            <a id="prev_c1" class="prev arows" href="#"><span>Prev</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product" class="list_product">
+          <li class="">
+              <div class="grid_3 product">
+                  <img class="sale" src="images/sale.png" alt="Sale"/>
+                  <div class="prev">
+                      <a href="product_page3 login.html"><img src="images/product3/product_slid.png" alt="" title="" /></a>
+                  </div><!-- .prev -->
+                  <h3 class="title">Good Sense CENTURY Multivitamin Supplement tablets</h3>
+                  <div class="cart">
+                      <div class="price">
+                          <div class="vert">
+                              <div class="price_new">$7.99</div>
+                              <div class="price_old">$10.00</div>
+                          </div>
+                      </div>
+                      <a href="compare login.html" class="obn"></a>
+                      <a href="wishlist login.html" class="like"></a>
+                      <a href="shopping_cart login.html" class="bay"></a>
+                  </div><!-- .cart -->
+              </div><!-- .grid_3 -->
+            </li>
+            
+            <li class="">
+              <div class="grid_3 product">
+                  <img class="sale" src="images/top.png" alt="Top"/>
+                  <div class="prev">
+                      <a href="product_page4 login.html"><img src="images/product4/product_slid.png" alt="" title="" /></a>
+                  </div><!-- .prev -->
+                  <h3 class="title">Tucks Medicated Hemorrhoid Cooling Pads 40 ea</h3>
+                  <div class="cart">
+                      <div class="price">
+                          <div class="vert">
+                              <div class="price_new">$4.99</div>
+                              <div class="price_old">$8.00</div>
+                          </div>
+                      </div>
+                      <a href="compare login.html" class="obn"></a>
+                      <a href="wishlist login.html" class="like"></a>
+                      <a href="shopping_cart login.html" class="bay"></a>
+                  </div><!-- .cart -->
+              </div><!-- .grid_3 -->
+            </li>
+            
+            <li class="">
+              <div class="grid_3 product">
+                  <div class="prev">
+                      <a href="product_page1 login.html"><img src="images/product5/product_slid.png" alt="" title="" /></a>
+                  </div><!-- .prev -->
+                  <h3 class="title">Benadryl Dye-Free Allergy Relief, Liqui-gels</h3>
+                  <div class="cart">
+                      <div class="price">
+                          <div class="vert">
+                              <div class="price_new">$4.99</div>
+                          </div>
+                      </div>
+                      <a href="compare login.html" class="obn"></a>
+                      <a href="wishlist login.html" class="like"></a>
+                      <a href="shopping_cart login.html" class="bay"></a>
+                  </div><!-- .cart -->
+              </div><!-- .grid_3 -->
+            </li>
+            
+            <li class="">
+              <div class="grid_3 product">
+                  <div class="prev">
+                      <a href="product_page2 login.html"><img src="images/product6/product_slid.png" alt="" title="" /></a>
+                  </div><!-- .prev -->
+                  <h3 class="title">Hyland's Leg Cramps PM Nighttime Cramp Relief Tablets</h3>
+                  <div class="cart">
+                      <div class="price">
+                          <div class="vert">
+                              <div class="price_new">$7.69</div>
+                          </div>
+                      </div>
+                      <a href="compare login.html" class="obn"></a>
+                      <a href="wishlist login.html" class="like"></a>
+                      <a href="shopping_cart login.html" class="bay"></a>
+                  </div><!-- .cart -->
+              </div><!-- .grid_3 -->
+          </li>
+
+        </ul><!-- #list_product -->
+        </div><!-- .list_carousel -->
+      </div><!-- .carousel -->
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+<iframe name="footer" width=100% height=383px marginwidth=0 marginheight=0 src="footer.html" ></iframe>
+
+</body>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>

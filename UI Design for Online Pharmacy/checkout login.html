@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Proceed to checkout</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+ 
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js"></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function() {
+		$("select").selectBox();
+	});
+  </script>
+  
+  <script>
+    function showaddr() {
+        document.getElementById("shipping_first").innerHTML="First Name: Jone";
+        document.getElementById("shipping_last").innerHTML="Last Name: Doe";
+        document.getElementById("shipping_addr").innerHTML="Address: 5000 Forbes Ave, Pittsburgh, PA";
+        document.getElementById("shipping_zip").innerHTML="Zipcode: 15213";
+        $("#shippingnew_first").attr('disabled','disabled');
+        $("#shippingnew_last").attr('disabled','disabled');
+        $("#shippingnew_addr").attr('disabled','disabled');
+        $("#shippingnew_zip").attr('disabled','disabled');
+    }
+  
+    function hideaddr() {
+        document.getElementById("shipping_first").innerHTML="";
+        document.getElementById("shipping_last").innerHTML="";
+        document.getElementById("shipping_addr").innerHTML="";
+        document.getElementById("shipping_zip").innerHTML="";
+        $("#shippingnew_first").removeAttr('disabled');
+        $("#shippingnew_last").removeAttr('disabled');
+        $("#shippingnew_addr").removeAttr('disabled');
+        $("#shippingnew_zip").removeAttr('disabled');
+    }
+  
+    function showpay() {
+        document.getElementById("payment_num").innerHTML="Card Number: 1234-5678-XXXX-XXXX";
+        document.getElementById("payment_type").innerHTML="Card Type: Visa";
+        document.getElementById("payment_date").innerHTML="Expiration Date: 08/14";
+        document.getElementById("payment_code").innerHTML="Security Code: 990";
+    }
+  
+    function hidepay() {
+        document.getElementById("payment_num").innerHTML="";
+        document.getElementById("payment_type").innerHTML="";
+        document.getElementById("payment_date").innerHTML="";
+        document.getElementById("payment_code").innerHTML="";
+    }
+  </script>
+  
+  <script>
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true	
+		});
+	});
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });             
+       })
+  </script>
+    
+</head>
+<body>
+  <div class="container_12">
+    <div id="top">
+      <div class="grid_3">
+        <div class="phone_top">
+          Call Us +777 (100) 1234
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+   
+      <div class="grid_6">
+        <div class="welcome">
+        </div><!-- .welcome -->
+      </div><!-- .grid_6 -->
+   
+      <div class="grid_3">
+        <div class="valuta">
+          <ul>
+            <li class="curent"><a href="#">$</a></li>
+            <li><a href="#">&#8364;</a></li>
+            <li><a href="#">&#163;</a></li>
+          </ul>
+        </div><!-- .valuta -->
+    
+        <div class="lang">
+          <ul>
+            <li class="curent"><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+            <li><a href="#">GM</a></li>
+          </ul>
+        </div><!-- .lang -->
+      </div><!-- .grid_3 -->
+    </div><!-- #top -->
+  
+    <div class="clear"></div>
+   
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo"><a href="index login.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+          <h2 id="site_description">Online Pharmacy</h2>
+        </hgroup>
+      </div><!-- .grid_3 -->
+      
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="search keywords"/>
+            <input class="entry_img" onClick="location='catalog_grid login.html'" readonly/>
+	</form>
+      </div><!-- .grid_3 -->
+      
+      <div class="grid_6">
+          <ul id="cart_nav">
+              <li>
+                  <a class="cart_li" href="#">Cart <span>$20.46</span></a>
+                  <ul class="cart_cont">
+                      <li class="no_border"><p>Recently added item(s)</p></li>
+                      <li>
+                          <a href="product_page1 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image1.png" alt="" title="" /></div></a>
+                          <div class="cont_cart">
+                              <h4><a href="product_page1 login.html">Centrum Centrum Multivitamin And Multimineral Supplement Tablets</a></h4>
+                              <div class="price">1 x $12.97</div>
+                          </div>
+                          <a title="close" class="close" href="#"></a>
+                          <div class="clear"></div>
+                      </li>
+                      
+                      <li>
+                          <a href="product_page2 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image2.png" alt="" title="" /></div></a>
+                          <div class="cont_cart">
+                              <h4><a href="product_page2 login.html">21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</a></h4>
+                              <div class="price">1 x $7.49</div>
+                          </div>
+                          <a title="close" class="close" href="#"></a>
+                          <div class="clear"></div>
+                      </li>
+                      <li class="no_border">
+                          <a href="shopping_cart login.html" class="view_cart">View shopping cart</a>
+                          <a href="checkout login.html" class="checkout">Procced to Checkout</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+        
+          <nav class="private">
+              <ul>
+                  <li><a href="shopping_cart login.html">My Account</a></li>
+                  <li class="separator">|</li>
+                  <li><a href="wishlist login.html">My Wishlist</a></li>
+                  <li class="separator">|</li>
+                  <li><a href="checkout.html">Log Out</a></li>
+                  <li class="separator">|</li>
+                  <li><a>John Doe</a></li>
+          </ul>
+        </nav><!-- .private -->        
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+  
+  <div class="clear"></div>
+  
+  <div id="block_nav_primary">
+      <div class="container_12">
+          <div class="grid_12">
+              <nav class="primary">
+                  <ul>
+                      <li class="curent"><a href="index login.html">Home</a></li>
+                      
+                      <li>
+                          <a href="catalog_grid login.html">Allergy</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Asthma Care</a></li>
+                              <li><a href="catalog_grid login.html">Cleaning Products</a></li>
+                              <li><a href="catalog_grid login.html">Humidifiers &#38; Vaporizers</a></li>
+                              <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Cold &#38; Flu</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Adult Cold Medicine</a></li>
+                              <li><a href="catalog_grid login.html">Chest Rubs</a></li>
+                              <li><a href="catalog_grid login.html">Children's Cold Medicine</a></li>
+                              <li><a href="catalog_grid login.html">Cough Drops &#38; Sore Throat</a></li>
+                              <li><a href="catalog_grid login.html">Flu Fighters</a></li>
+                              <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                              <li><a href="catalog_grid login.html">Natural Remedies</a></li>
+                              <li><a href="catalog_grid login.html">Sinus Congestion &#38; Pain</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Diabetes</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Blood Test Strips</a></li>
+                              <li><a href="catalog_grid login.html">Diabetic Monitors &#38; Kits</a></li>
+                              <li><a href="catalog_grid login.html">Lancets &#38; Tips</a></li>
+                              <li><a href="catalog_grid login.html">Rubbing Alcohol</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Digestion</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Antacid Liquid</a></li>
+                              <li><a href="catalog_grid login.html">Antacid Tablets</a></li>
+                              <li><a href="catalog_grid login.html">Anti-Diarrheals</a></li>
+                              <li><a href="catalog_grid login.html">Children's Digestive Aids</a></li>
+                              <li><a href="catalog_grid login.html">Enemas</a></li>
+                              <li><a href="catalog_grid login.html">Fiber</a></li>
+                              <li><a href="catalog_grid login.html">Natural digestive remedies</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Eye Care</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Eye Drops &#38; Ointments</a></li>
+                              <li><a href="catalog_grid login.html">Lens Care</a></li>
+                              <li><a href="catalog_grid login.html">Reading Glasses</a></li>
+                              
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Pain Relief</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Arthritis Pain Relief</a></li>
+                              <li><a href="catalog_grid login.html">Children's Pain Relief</a></li>
+                              <li><a href="catalog_grid login.html">Cold &#38; Hot Packs</a></li>
+                              <li><a href="catalog_grid login.html">Hemorrhoids</a></li>
+                              <li><a href="catalog_grid login.html">Menstrual Pain Relief</a></li>
+                              <li><a href="catalog_grid login.html">Migraine Relief</a></li>
+                              <li><a href="catalog_grid login.html">Natural Pain &#38; Fever Relief</a></li>
+                              <li><a href="catalog_grid login.html">Oral Pain Relief</a></li>
+                              <li><a href="catalog_grid login.html">Rubs &#38; Ointments</a></li>
+                              <li><a href="catalog_grid login.html">Sore Muscle Relief</a></li>
+                              <li><a href="catalog_grid login.html">Urinary Pain Relief</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="catalog_grid login.html">Vitamin &#38; Supplements</a>
+                          <ul class="sub">
+                              <li><a href="catalog_grid login.html">Bone &#38; Joint</a></li>
+                              <li><a href="catalog_grid login.html">Calcium &#38; Minerals</a></li>
+                              <li><a href="catalog_grid login.html">Fish Oil &#38; Omegas</a></li>
+                              <li><a href="catalog_grid login.html">Herbs</a></li>
+                              <li><a href="catalog_grid login.html">Multivitamins</a></li>
+                              <li><a href="catalog_grid login.html">Natural Vitamins</a></li>
+                              <li><a href="catalog_grid login.html">Probiotics</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                  </li>
+                  </ul>
+              </nav><!-- .primary -->
+          </div><!-- .grid_12 -->
+      </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+  
+  <div class="clear"></div>
+  
+  <div class="container_12">
+      <div class="grid_12">
+          <div class="breadcrumbs">
+              <a href="index login.html">Home</a><span>&#8250;</span>
+              <span class="current">Checkout</span>
+          </div><!-- .breadcrumbs -->
+      </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+  
+  <div class="clear"></div>
+  
+  <section id="main" class="entire_width">
+    <div class="container_12">      
+       <div id="content">
+		<div class="grid_12">
+			<h1 class="page_title">Checkout</h1>
+		</div><!-- .grid_12 -->
+		
+		<div class="grid_9" id="checkout_info">
+			<ul class="checkout_list">
+				<li class="active">
+					<div class="list_header">Billing Information<div class="number">1</div></div>
+                    <div class="list_body">
+						<form class="chechout_or">
+                            <br />
+                            <h6 align="center">Full Name:</h6>
+                            <h6 align="center">Email Address:</h6>
+                            <h6 align="center">Address:</h6>
+
+						</form>
+						<form class="login">
+                            </br>
+                            <h6 align="left">Jone Doe</h6>
+                            <h6 align="left">JoneDoe@gmail.com</h6>
+                            <h6 align="left">5000 Forbes Ave, Pittsburgh, PA, 15213</h6>
+						</form>
+						<div class="clear"></div>
+					</div>
+				</li>
+                
+				<li class="active">
+					<div class="list_header">Shipping Information<div class="number">2</div></div>
+                    <div class="list_body">
+						<form class="checkout_or">
+							<ul class="radio" onclick="showaddr()">
+								<li><input class="niceRadio" type="radio" name="address" checked="checked"/> Same as Billing Address</li>
+							</ul>
+                            <div>
+                                <div id="shipping_first" style="height:54px;">
+                                    First Name: Jone
+                                </div>
+							</div>
+							<div>
+                                <div id="shipping_last" style="height:54px;">
+                                    Last Name: Doe
+                                </div>
+                            </div>
+                            <div>
+                                <div id="shipping_addr" style="height:54px;">
+                                    Address: 5000 Forbes Ave, Pittsburgh, PA
+                                </div>
+                            </div>
+                            <div>
+                                <div id="shipping_zip" style="height:54px;">
+                                    Zipcode: 15213
+                                </div>
+                            </div>
+						</form>
+                        
+                        <form class="checkout_or">
+							<ul class="radio" onclick="hideaddr()">
+								<li> <input class="niceRadio" type="radio" name="address"/> Create a New Address</li>
+                            </ul>
+                            <div>
+								First Name:
+								<input type="text" id="shippingnew_first" name="" class="" value="" style="width:200px; height:30px;" disabled="disabled"/>
+                                </br>
+							</div>
+							<div>
+                                </br>
+								Last Name:
+								<input type="text" id="shippingnew_last" name="" class="" value="" style="width:200px; height:30px;" disabled="disabled"/>
+                            </div>
+                            <div>
+                                </br>
+								Address:&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" id="shippingnew_addr" name="" class="" value="" style="width:200px; height:30px;" disabled="disabled"/>
+                            </div>
+                            <div>
+                                </br>
+								Zipcode:&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" id="shippingnew_zip" name="" class="" value="" style="width:200px; height:30px;" disabled="disabled"/>
+                            </div>
+						</form>
+
+						<div class="clear"></div>
+					</div>
+				</li>
+				
+                <li class="active">
+					<div class="list_header">Shipping Method<div class="number">3</div></div>
+                    <div class="list_body">
+						<form class="checkout_or">
+							<ul class="radio" align="left">
+								<li><input class="niceRadio" type="radio" name="ship" checked="checked"/> Standard Shipping - $3.99</li>
+								<li><input class="niceRadio" type="radio" name="ship"/> Priority Shipping - $6.99</li>
+                                <li><input class="niceRadio" type="radio" name="ship"/> Express Shipping  - $9.99</li>
+							</ul>
+						</form>
+						<div class="clear"></div>
+					</div>
+				</li>
+                
+				<li class="active">
+					<div class="list_header">Payment Information<div class="number">4</div></div>
+                    <div class="list_body">
+						<form class="checkout_or">
+							<ul class="radio" onclick="showpay()">
+								<li><input class="niceRadio" type="radio" name="pay" checked="checked"/> Use the Saved Payment Information</li>
+							</ul>
+                            <div>
+                                <div id="payment_num" style="height:54px;">
+                                    Card Number: 1234-5678-XXXX-XXXX
+                                </div>
+							</div>
+							<div>
+                                <div id="payment_type" style="height:54px;">
+                                    Card Type: Visa
+                                </div>
+                            </div>
+                            <div>
+                                <div id="payment_date" style="height:54px;">
+                                    Expiration Date: 08/14
+                                </div>
+                            </div>
+                            <div>
+                                <div id="payment_code" style="height:54px;">
+                                    Security Code: 990
+                                </div>
+                            </div>
+						</form>
+                        
+                        <form class="checkout_or">
+							<ul class="radio" onclick="hidepay()">
+								<li><input class="niceRadio" type="radio" name="pay"/> Create a New Payment Infromation</li>
+							</ul>
+                            <div>
+                                Card Number:&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" name="" class="" value="" style="width:200px; height:30px;"/>
+							</div>
+                            
+                            <div>
+                                </br>
+                                Card Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select class="form-control" id="card_type" style="width:150px; height:33px;" />
+                                    <option value="1">Select</option>
+                                    <option value="2">Visa</option>
+                                    <option value="3">Master Card</option>
+                                    <option value="4">American Express</option>
+                                    <option value="5">Discover</option>
+                                </select>
+                            </div>
+                            
+                            
+							<div>
+                                </br>
+								Expiration Date:&nbsp;&nbsp;&nbsp;
+								<input type="text" name="" class="" value="" style="width:40px; height:30px;"/> /
+                                <input type="text" name="" class="" value="" style="width:40px; height:30px;"/> MM/YY
+                            </div>
+                            <div>
+                                </br>
+								Security Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="text" name="" class="" value="" style="width:40px; height:30px;"/> 3 Digits on Back
+                            </div>
+						</form>
+						<div class="clear"></div>
+					</div>
+				</li>
+                
+                
+				<li class="active">
+					<div class="list_header">Order Review<div class="number">5</div></div>
+                    <div class="list_body">
+						<form class="chechout_or">
+                            <h6 align="center">Items:
+                                </br></br><p>&nbsp;</p>
+                                </br></br><p>&nbsp;</p>
+                            
+
+                                Subtotal:</h6>
+                            <h6 align="center">Tax:</h6>
+                            <h6 align="center">Shipping:</h6>
+                            <h4 align="center">Order Total:</h4>
+                            
+						</form>
+						<form class="login">
+                            <h6 align="left"><a href="product_page1%20login.html" target="_blank">Centrum Centrum Multivitamin And Multimineral Supplement Tablets</a><p align="right">-Quantity: 1</p>
+                                <a href="product_page2%20login.html" target="_blank">21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</a><p align="right">-Quantity: 1</p>
+                          
+                            
+                                $20.46</h6>
+                            <h6>$1.43</h6>
+                            <h6>$6.99</h6>
+                            <h4>$28.88</h4>
+						</form>
+						<div class="clear"></div>
+					</div>
+				</li>
+                
+                <div class="submit" align="center">
+                    </br>
+                    <input type="submit" value="Place My Order" style="width:400px; height:50px; font-size:20px;" onClick="location.href='success login.html'"/>
+                </div><!-- .submit -->
+                
+			</ul>
+                </div><!-- .grid_9 -->
+		
+		<div class="grid_3" id="sidebar_right">
+			<aside id="checkout_progress">
+				<h3>Your Checkout Progress</h3>
+				<ul>
+					<li>Billing Information<a title="Edit" href="#">Edit</a></li>
+					<li>Shipping Information<a title="Edit" href="#">Edit</a></li>
+					<li>Shipping Method<a title="Edit" href="#">Edit</a></li>
+					<li>Payment Information<a title="Edit" href="#">Edit</a></li>
+				</ul>
+			</aside>
+                </div><!-- #sidebar_right -->
+       </div><!-- #content -->
+       
+      <div class="clear"></div>
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+  
+  <div class="clear"></div>
+    
+    <footer>
+        <div class="f_navigation">
+            <div class="container_12">
+                <div class="grid_3">
+                    <h3>Contact Us</h3>
+                    <ul class="f_contact">
+                        <li>Carnegie Mellon University</li>
+                        <li>+777 (100) 1234</li>
+                        <li>mail@WhiteApple.com</li>
+                    </ul><!-- .f_contact -->
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_3">
+                    <h3>Information</h3>
+                    <nav class="f_menu">
+                        <ul>
+                            <li><a href="#">About As</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &#38; Conditions</a></li>
+                            <li><a href="#">Secure payment</a></li>
+                        </ul>
+                    </nav><!-- .private -->
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_3">
+                    <h3>Costumer Servise</h3>
+                    <nav class="f_menu">
+                        <ul>
+                            <li><a href="contact_us.html">Contact As</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </nav><!-- .private -->
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_3">
+                    <h3>My Account</h3>
+                    <nav class="f_menu">
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </nav><!-- .private -->
+                </div><!-- .grid_3 -->
+                
+                <div class="clear"></div>
+            </div><!-- .container_12 -->
+        </div><!-- .f_navigation -->
+        
+        <div class="f_info">
+            <div class="container_12">
+                <div class="grid_6">
+                    <p class="copyright">© Team WhiteApple, 2013</p>
+                </div><!-- .grid_6 -->
+                
+                <div class="grid_6">
+                    <div class="soc">
+                        <a class="google" href="#"></a>
+                        <a class="twitter" href="#"></a>
+                        <a class="facebook" href="#"></a>
+                    </div><!-- .soc -->
+                </div><!-- .grid_6 -->
+                
+                <div class="clear"></div>
+            </div><!-- .container_12 -->
+        </div><!-- .f_info -->
+    </footer>
+    
+</body>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>

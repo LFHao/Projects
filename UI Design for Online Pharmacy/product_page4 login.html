@@ -1,0 +1,745 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8">
+            
+            <meta name="description" content="">
+                <meta name="keywords" content="">
+                    
+                    <title>Product view</title>
+                    
+                    <link rel="shortcut icon" href="favicon.ico">
+                        <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+                            <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+                                <link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css">
+                                    
+                                    <script src="js/jquery-1.7.2.min.js" ></script>
+                                    <script src="js/html5.js" ></script>
+                                    <script src="js/jflow.plus.js" ></script>
+                                    <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+                                    <script src="js/checkbox.js"></script>
+                                    <script src="js/radio.js"></script>
+                                    <script src="js/selectBox.js"></script>
+                                    <script src="js/jquery.jqzoom-core.js" ></script>
+                                    
+                                    <script>
+                                        $(document).ready(function() {
+                                                          $('.jqzoom').jqzoom({
+                                                                              zoomType: 'standard',
+                                                                              lens:true,
+                                                                              preloadImages: true,
+                                                                              alwaysOn:false
+                                                                              });
+                                                          });
+                                        </script>
+                                    
+                                    <script>
+                                        $(document).ready(function() {
+                                                          $("select").selectBox();
+                                                          });
+                                        </script>
+                                    
+                                    <script>
+                                        $(document).ready(function() {
+                                                          $('#wrapper_tab a').click(function() {
+                                                                                    if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+                                                                                    $('#wrapper_tab').attr('class',$(this).attr('class'));
+                                                                                    }
+                                                                                    return false;
+                                                                                    });
+                                                          });
+                                        </script>
+                                    
+                                    <script>
+                                        $(function() {
+                                          $('#list_product').carouFredSel({
+                                                                          prev: '#prev_c1',
+                                                                          next: '#next_c1',
+                                                                          auto: false
+                                                                          });
+                                          $('#list_banners').carouFredSel({
+                                                                          prev: '#ban_prev',
+                                                                          next: '#ban_next',
+                                                                          scroll: 1,
+                                                                          auto: false
+                                                                          });
+                                          $('#thumblist').carouFredSel({
+                                                                       prev: '#img_prev',
+                                                                       next: '#img_next',
+                                                                       scroll: 1,
+                                                                       auto: false,
+                                                                       circular: false,
+                                                                       });
+                                          $(window).resize();
+                                          });
+                                        </script>
+                                    <script>
+                                        $(document).ready(function(){
+                                                          $("button").click(function(){
+                                                                            $(this).addClass('click')
+                                                                            });
+                                                          })
+                                        </script>
+                                    
+                                    </head>
+    <body>
+        <div class="container_12">
+            <div id="top">
+                <div class="grid_3">
+                    <div class="phone_top">
+                        Call Us +777 (100) 1234
+                    </div><!-- .phone_top -->
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_6">
+                    <div class="welcome">
+                    </div><!-- .welcome -->
+                </div><!-- .grid_6 -->
+                
+                <div class="grid_3">
+                    <div class="valuta">
+                        <ul>
+                            <li class="curent"><a href="#">$</a></li>
+                            <li><a href="#">&#8364;</a></li>
+                            <li><a href="#">&#163;</a></li>
+                        </ul>
+                    </div><!-- .valuta -->
+                    
+                    <div class="lang">
+                        <ul>
+                            <li class="curent"><a href="#">EN</a></li>
+                            <li><a href="#">FR</a></li>
+                            <li><a href="#">GM</a></li>
+                        </ul>
+                    </div><!-- .lang -->
+                </div><!-- .grid_3 -->
+            </div><!-- #top -->
+            
+            <div class="clear"></div>
+            
+            <header id="branding">
+                <div class="grid_3">
+                    <hgroup>
+                        <h1 id="site_logo"><a href="index login.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+                        <h2 id="site_description">Online Pharmacy</h2>
+                    </hgroup>
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_3">
+                    <form class="search">
+                        <input type="text" name="search" class="entry_form" value="" placeholder="search keywords"/>
+                        <input class="entry_img" onClick="location='catalog_grid.html'" readonly/>
+                    </form>
+                </div><!-- .grid_3 -->
+                
+                <div class="grid_6">
+                    <ul id="cart_nav">
+                        <li>
+                            <a class="cart_li" href="#">Cart <span>$20.46</span></a>
+                            <ul class="cart_cont">
+                                <li class="no_border"><p>Recently added item(s)</p></li>
+                                <li>
+                                    <a href="product_page1 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image1.png" alt="" title="" /></div></a>
+                                    <div class="cont_cart">
+                                        <h4>Centrum Centrum Multivitamin And Multimineral Supplement Tablets</h4>
+                                        <div class="price">1 x $12.97</div>
+                                    </div>
+                                    <a title="close" class="close" href="#"></a>
+                                    <div class="clear"></div>
+                                </li>
+                                
+                                <li>
+                                    <a href="product_page2 login.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_image2.png" alt="" title="" /></div></a>
+                                    <div class="cont_cart">
+                                        <h4>21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</h4>
+                                        <div class="price">1 x $7.49</div>
+                                    </div>
+                                    <a title="close" class="close" href="#"></a>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="no_border">
+                                    <a href="shopping_cart login.html" class="view_cart">View shopping cart</a>
+                                    <a href="checkout.html" class="checkout">Procced to Checkout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <nav class="private">
+                        <ul>
+                            <li><a href="my_account.html">My Account</a></li>
+                            <li class="separator">|</li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li class="separator">|</li>
+                            <li><a href="product_page4.html">Log Out</a></li>
+                            <li class="separator">|</li>
+                            <li><a>John Doe</a></li>
+                        </ul>
+                    </nav><!-- .private -->
+                </div><!-- .grid_6 -->
+            </header><!-- #branding -->
+        </div><!-- .container_12 -->
+        
+        <div class="clear"></div>
+        
+        <div id="block_nav_primary">
+            <div class="container_12">
+                <div class="grid_12">
+                    <nav class="primary">
+                        <ul>
+                            <li class="curent"><a href="index login.html">Home</a></li>
+                            
+                            <li>
+                                <a href="catalog_grid login.html">Allergy</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Asthma Care</a></li>
+                                    <li><a href="catalog_grid login.html">Cleaning Products</a></li>
+                                    <li><a href="catalog_grid login.html">Humidifiers &#38; Vaporizers</a></li>
+                                    <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Cold &#38; Flu</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Adult Cold Medicine</a></li>
+                                    <li><a href="catalog_grid login.html">Chest Rubs</a></li>
+                                    <li><a href="catalog_grid login.html">Children's Cold Medicine</a></li>
+                                    <li><a href="catalog_grid login.html">Cough Drops &#38; Sore Throat</a></li>
+                                    <li><a href="catalog_grid login.html">Flu Fighters</a></li>
+                                    <li><a href="catalog_grid login.html">Nasal Care</a></li>
+                                    <li><a href="catalog_grid login.html">Natural Remedies</a></li>
+                                    <li><a href="catalog_grid login.html">Sinus Congestion &#38; Pain</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Diabetes</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Blood Test Strips</a></li>
+                                    <li><a href="catalog_grid login.html">Diabetic Monitors &#38; Kits</a></li>
+                                    <li><a href="catalog_grid login.html">Lancets &#38; Tips</a></li>
+                                    <li><a href="catalog_grid login.html">Rubbing Alcohol</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Digestion</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Antacid Liquid</a></li>
+                                    <li><a href="catalog_grid login.html">Antacid Tablets</a></li>
+                                    <li><a href="catalog_grid login.html">Anti-Diarrheals</a></li>
+                                    <li><a href="catalog_grid login.html">Children's Digestive Aids</a></li>
+                                    <li><a href="catalog_grid login.html">Enemas</a></li>
+                                    <li><a href="catalog_grid login.html">Fiber</a></li>
+                                    <li><a href="catalog_grid login.html">Natural digestive remedies</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Eye Care</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Eye Drops &#38; Ointments</a></li>
+                                    <li><a href="catalog_grid login.html">Lens Care</a></li>
+                                    <li><a href="catalog_grid login.html">Reading Glasses</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Pain Relief</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Arthritis Pain Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Children's Pain Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Cold &#38; Hot Packs</a></li>
+                                    <li><a href="catalog_grid login.html">Hemorrhoids</a></li>
+                                    <li><a href="catalog_grid login.html">Menstrual Pain Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Migraine Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Natural Pain &#38; Fever Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Oral Pain Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Rubs &#38; Ointments</a></li>
+                                    <li><a href="catalog_grid login.html">Sore Muscle Relief</a></li>
+                                    <li><a href="catalog_grid login.html">Urinary Pain Relief</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog_grid login.html">Vitamin &#38; Supplements</a>
+                                <ul class="sub">
+                                    <li><a href="catalog_grid login.html">Bone &#38; Joint</a></li>
+                                    <li><a href="catalog_grid login.html">Calcium &#38; Minerals</a></li>
+                                    <li><a href="catalog_grid login.html">Fish Oil &#38; Omegas</a></li>
+                                    <li><a href="catalog_grid login.html">Herbs</a></li>
+                                    <li><a href="catalog_grid login.html">Multivitamins</a></li>
+                                    <li><a href="catalog_grid login.html">Natural Vitamins</a></li>
+                                    <li><a href="catalog_grid login.html">Probiotics</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </nav><!-- .primary -->
+                </div><!-- .grid_12 -->
+            </div><!-- .container_12 -->
+        </div><!-- .block_nav_primary -->
+        
+        <div class="clear"></div>
+        
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="breadcrumbs">
+                    <a href="index login.html">Home</a><span>&#8250;</span>
+                    <a href="catalog_grid login.html">Category</a><span>&#8250;</span>
+                    <span class="current">product 4</span>
+                </div><!-- .breadcrumbs -->
+            </div><!-- .grid_12 -->
+        </div><!-- .container_12 -->
+        
+        <div class="clear"></div>
+        
+        <section id="main">
+            <div class="container_12">
+                <div id="sidebar" class="grid_3">
+                    <aside id="categories_nav">
+                    </aside><!-- #categories_nav -->
+                    
+                    <aside id="tags">
+                        <h3>Keywords</h3>
+                        <a class="t1" href="#">Dietary</a>
+                        <a class="t2" href="#">canada</a>
+                        <a class="t3" href="#">canon</a>
+                        <a class="t4" href="#">USA</a>
+                        <a class="t5" href="#">Nervous Systems</a>
+                        <a class="t6" href="#">Maintain Skin</a>
+                        <a class="t7" href="#">21st Century</a>
+                        <a class="t8" href="#">church</a>
+                        <a class="t9" href="#">city</a>
+                        <a class="t10" href="#">Vitamin B3</a>
+                        <a class="t11" href="#">Niacin </a>
+                        <a class="t12" href="#">concert</a>
+                        <a class="t13" href="#">Gluten Free</a>
+                        
+                        <a class="t15" href="#">FDA</a>
+                        <a class="t16" href="#">Supplement</a>
+                        <a class="t17" href="#">Digestive</a>
+                    </aside><!-- #community_poll -->
+                    
+                    
+                    <aside id="shop_by">
+                        <h3>Form</h3>
+                        <form action="#" class="check_opt">
+                            <p><input class="niceCheck" type="checkbox" >Liqiud (21)</p>
+                                <p><input class="niceCheck" type="checkbox" name="" value="" />Tablet (46)</p>
+                                <p><input class="niceCheck" type="checkbox" name="" value="" />Spay (74)</p>
+                                <p><input class="niceCheck" type="checkbox" name="" value="" />Other (135)</p>
+                                </form>
+                        
+                        <h3>Brands</h3>
+                        <form action="#" class="check_opt">
+                            <p><input class="niceCheck" type="checkbox" />21st Century (8)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Alcon (19)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Biotivia (24)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Centrum (7)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Dream Water (36)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />GNC (50)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Hugo (46)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />MRM (20)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />Others (66)</p>
+                        </form>
+                        
+                        <h3>Price Range</h3>
+                        <form action="#" class="check_opt">
+                            <p><input class="niceCheck" type="checkbox" />$0 - $20 (34)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />$20 - $40 (89)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />$40 - $60 (56)</p>
+                            <p><input class="niceCheck" type="checkbox" name="" value="" />$60+ (97)</p>
+                        </form>
+                        
+                    </aside><!-- #shop_by -->
+                    
+                    <aside id="specials" class="specials">
+                        <h3>Specials</h3>
+                        
+                        <ul>
+                            <li>
+                                <div class="prev">
+                                    <a href="product_page3 login.html"><img src="images/special1.png" alt="" title="" /></a>
+                                </div>
+                                
+                                <div class="cont">
+                                    <a href="product_page3 login.html">Good Sense CENTURY Multivitamin/Multimineral Supplement tablets</a>
+                                    <div class="prise"><span class="old">$10.00</span>$7.99</div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="prev">
+                                    <a href="product_page4 login.html"><img src="images/special2.png" alt="" title="" /></a>
+                                </div>
+                                
+                                <div class="cont">
+                                    <a href="product_page4 login.html">Tucks Medicated Hemorrhoid Cooling Pads 40 ea</a>
+                                    <div class="prise"><span class="old">$8.00</span>$4.99</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </aside><!-- #specials -->
+                    
+                    <aside id="newsletter_signup">
+                        <h3>Newsletter Signup</h3>
+                        <p>Phasellus vel ultricies felis. Duis
+                        rhoncus risus eu urna pretium.</p>
+                        
+                        <form class="newsletter">
+                            <input type="email" name="newsletter" class="your_email" value="" placeholder="Enter your email address..."/>
+                            <input type="submit" id="submit" value="Subscribe" />
+                        </form>
+                    </aside><!-- #newsletter_signup -->
+  
+                </div><!-- .sidebar -->
+                
+                <div id="content" class="grid_9">
+                    <h1 class="page_title">Tucks Medicated Hemorrhoid Cooling Pads 40 ea</h1>
+                    
+                    <div class="product_page">
+                        <div class="grid_4 img_slid" id="products">
+                            <img class="sale" src="images/top.png" alt="Top"/>
+                            <div class="preview slides_container">
+                                <div class="prev_bg">
+                                    <a href="images/product4/product_slid.png" class="jqzoom" rel='gal1' title="">
+                                        <img src="images/product4/product_slid.png"  title="" alt=""/>
+                                    </a>
+                                </div>
+                            </div><!-- .prev -->
+                            
+                            <ul class="pagination clearfix" id="thumblist">
+                                <li><a class="zoomThumbActive" href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/product4/product_slid.png',largeimage: './images/product4/product_slid.png'}"><img src='images/product4/product_slid.png' alt=""></a></li>
+                                <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/product4/product_slid1.png',largeimage: './images/product4/product_slid1.png'}"><img src='images/product4/product_slid1.png' alt=""></a></li>
+                                <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/product4/product_slid2.png',largeimage: './images/product4/product_slid2.png'}"><img src='images/product4/product_slid2.png' alt=""></a></li>
+                                <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/product4/product_slid3.png',largeimage: './images/product4/product_slid3.png'}"><img src='images/product4/product_slid3.png' alt=""></a></li>
+                            </ul>
+                            
+                            <div class="next_prev">
+                                <a id="img_prev" class="arows" href="#"><span>Prev</span></a>
+                                <a id="img_next" class="arows" href="#"><span>Next</span></a>
+                            </div><!-- . -->
+                        </div><!-- .grid_4 -->
+                        
+                        <div class="grid_5">
+                            <div class="entry_content">
+                                <div class="review">
+                                    <a class="plus" href="#"></a>
+                                    <a class="plus" href="#"></a>
+                                    <a class="plus" href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <span>1 REVIEW(S)</span>
+                                    <a class="add_review" href="#">ADD YOUR REVIEW</a>
+                                </div>
+                                <p>Over twenty percent of the adult population will get hemorrhoids. That means one out of five adults you know could have them. Now you have help, you have Tucks®.</p>
+                                <p>Cleanse and Relieve discomfort with Tucks® Medicated Cooling Pads. They are pH balanced, hypo-allergenic, dye-free, and biodegradable when flushed.</p>
+                                <div class="ava_price">
+                                    <div class="availability_sku">
+                                        <div class="availability">
+                                            Availability: <span>In stock</span>
+                                        </div>
+                                    </div><!-- .availability_sku -->
+                                    
+                                    <div class="price">
+                                        <div class="price_new">$4.99</div>
+                                        <div class="price_old">$8.00</div>
+                                    </div><!-- .price -->
+                                </div><!-- .ava_price -->
+                                
+                                <div class="block_cart">
+                                    <div class="obn_like">
+                                        <div class="obn"><a href="compare login.html" class="obn">Add to Compare</a></div>
+                                        <div class="like"><a href="wishlist login.html" class="like">Add to Wishlist</a></div>
+                                    </div>
+                                    
+                                    <div class="cart">
+                                        <a href="shopping_cart login.html" class="bay">Add to Cart</a>
+                                        <input type="text" name="" class="number" value="1" />
+                                        <span>Quantity:</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!-- .block_cart -->
+                       
+                            </div><!-- .entry_content -->
+                            
+                        </div><!-- .grid_5 -->
+                        
+                        <div class="clear"></div>
+                        
+                        <div class="grid_9" >
+                            <div id="wrapper_tab" class="tab1">
+                                <a href="#" class="tab1 tab_link">Product Details</a>
+                                <a href="#" class="tab2 tab_link">Ingredients</a>
+                                <a href="#" class="tab3 tab_link">Reviews</a>
+                                <a href="#" class="tab4 tab_link">Directions</a>
+                                <a href="#" class="tab5 tab_link">Side Effects</a>
+                                
+                                <div class="clear"></div>
+                                
+                                <div class="tab1 tab_body">
+                                    <h4>Product details</h4>
+                                    <p>Specially Formulated Multivitamin/Multimineral Supplement for Adults 50+.
+                                    
+                                    **Contains all nutrients and antioxidants with RDIs except iron.
+                                    
+                                    *These statements have not been evaluated by the food and drug administration. This product is not intended to diagnose, treat, cure or prevent any disease.
+                                    
+                                    </p>
+                                    <ul>
+                                        <li>Broad spectrum of nutrients to help protect your health as you age*</li>
+                                        <li>From A to Zinc®+.</li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div><!-- .tab1 .tab_body -->
+                                
+                                <div class="tab2 tab_body">
+                                    <h4>Ingredients</h4>
+                                    <p>Calcium Carbonate, Potassium Chloride, Dibasic Calcium Phosphate, Magnesium Oxide, Ascorbic Acid (Vitamin C), Microcrystalline Cellulose, D Alpha Tocopherol Acetate (Vitamin E), Pregelatinized Starch (Corn), Modified Food Starch, Contains Less Than 2% of:, Acacia, Ascorbyl Palmitate, Beta Carotene, BHT, Biotin, Boric Acid, Calcium Pantothenate, Calcium Stearate, Cholecalciferol (Vitamin D3), Chromium Picolinate, Citric Acid, Corn Starch, Crospovidone, Cupric Sulfate, Cyanocobalamin (Vitamin B12), FD&amp;C Blue 2 Aluminum Lake, FD&amp;C Red 40 Aluminum Lake, FD&amp;C Yellow 6 Aluminum Lake.
+                                    
+                                    </p>
+                                    <div class="clear"></div>
+                                </div><!-- .tab2 .tab_body -->
+                                
+                                <div class="tab3 tab_body">
+                                    <h4>Customer reviews</h4>
+                                    <ul class="comments">
+                                        <li>
+                                            <div class="autor">Mike Example</div>, <time datetime="2012-11-03">03.11.2012</time>
+                                            
+                                            <div class="evaluation">
+                                                <div class="quality">
+                                                    <strong>Quality</strong>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a href="#"></a>
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="price">
+                                                    <strong>Price</strong>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus_minus" href="#"></a>
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div><!-- .evaluation -->
+                                            
+                                            <p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.</p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="autor">Mike Example</div>, <time datetime="2012-11-03">03.11.2012</time>
+                                            
+                                            <div class="evaluation">
+                                                <div class="quality">
+                                                    <strong>Quality</strong>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus_minus" href="#"></a>
+                                                </div>
+                                                <div class="price">
+                                                    <strong>Price</strong>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a class="plus" href="#"></a>
+                                                    <a href="#"></a>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div><!-- .evaluation -->
+                                            
+                                            <p>Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et. Duis rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate pulvinar adipiscing.</p>
+                                        </li>
+                                    </ul><!-- .comments -->
+                                    
+                                    <form class="add_comments">
+                                        <h4>Write Your Own Review</h4>
+                                        
+                                        <div class="evaluation">
+                                            <div class="quality">
+                                                <strong>Quality</strong><sup class="surely">*</sup>
+                                                <input class="niceRadio" type="radio" name="quality" value="1" /><span class="eva_num">1</span>
+                                                <input class="niceRadio" type="radio" name="quality" value="2" /><span class="eva_num">2</span>
+                                                <input class="niceRadio" type="radio" name="quality" value="3" /><span class="eva_num">3</span>
+                                                <input class="niceRadio" type="radio" name="quality" value="4" /><span class="eva_num">4</span>
+                                                <input class="niceRadio" type="radio" name="quality" value="5" /><span class="eva_num">5</span>
+                                            </div>
+                                            <div class="price">
+                                                <strong>Price</strong><sup class="surely">*</sup>
+                                                <input class="niceRadio" type="radio" name="price" value="1" /><span class="eva_num">1</span>
+                                                <input class="niceRadio" type="radio" name="price" value="2" /><span class="eva_num">2</span>
+                                                <input class="niceRadio" type="radio" name="price" value="3" /><span class="eva_num">3</span>
+                                                <input class="niceRadio" type="radio" name="price" value="4" /><span class="eva_num">4</span>
+                                                <input class="niceRadio" type="radio" name="price" value="5" /><span class="eva_num">5</span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!-- .evaluation -->
+                                        
+                                        <div class="nickname">
+                                            <strong>Nickname</strong><sup class="surely">*</sup><br/>
+                                            <input type="text" name="" class="" value="" />
+                                        </div><!-- .nickname -->
+                                        
+                                        <div class="your_review">
+                                            <strong>Summary of Your Review</strong><sup class="surely">*</sup><br/>
+                                            <input type="text" name="" class="" value="" />
+                                        </div><!-- .your_review -->
+                                        
+                                        <div class="clear"></div>
+                                        
+                                        <div class="text_review">
+                                            <strong>Review</strong><sup class="surely">*</sup><br/>
+                                            <textarea name="text"></textarea>
+                                            
+                                        </div><!-- .text_review -->
+                                        
+                                        <input type="submit" value="Submit Review" />
+                                    </form><!-- .add_comments -->
+                                    <div class="clear"></div>
+                                </div><!-- .tab3 .tab_body -->
+                                
+                                <div class="tab4 tab_body">
+                                    <h4>Directions</h4>
+                                    <p>Suggested Use: Adults - One tablet daily with food. Not formulated for use in children. As with any supplement, if you are pregnant or nursing a baby, contact your healthcare professional.
+                                    
+                                    Store at room temperature. Keep bottle tightly closed.</p>
+                                    <div class="clear"></div>
+                                </div><!-- .tab4 .tab_body -->
+                                
+                                <div class="tab5 tab_body">
+                                    <h4>Side effects</h4>
+                                    <p>Specially Formulated Multivitamin/Multimineral Supplement for Adults 50+.
+                                    
+                                    **Contains all nutrients and antioxidants with RDIs except iron.
+                                    
+                                    *These statements have not been evaluated by the food and drug administration. This product is not intended to diagnose, treat, cure or prevent any disease.
+                                    
+                                    </p>
+                                    <div class="clear"></div>
+                                </div><!-- .tab5 .tab_body -->
+                                
+                            </div>​<!-- #wrapper_tab -->
+                            <div class="clear"></div>
+                        </div><!-- .grid_9 -->
+                        <div class="clear"></div>
+                        
+                        <div class="related">
+                            <div class="c_header">
+                                <div class="grid_7">
+                                    <h2>Related Products</h2>
+                                </div><!-- .grid_7 -->
+                                
+                                <div class="grid_2">
+                                    <a id="next_c1" class="next arows" href="#"><span>Next</span></a>
+                                    <a id="prev_c1" class="prev arows" href="#"><span>Prev</span></a>
+                                </div><!-- .grid_2 -->
+                            </div><!-- .c_header -->
+                            
+                            <div class="list_carousel">
+                                
+                                <ul id="list_product" class="list_product">
+                                    <li class="">
+                                        <div class="grid_3 product">
+                                            <img class="sale" src="images/sale.png" alt="Sale"/>
+                                            <div class="prev">
+                                                <a href="product_page1 login.html"><img src="images/product1/product_slid.png" alt="" title="" /></a>
+                                            </div><!-- .prev -->
+                                            <h3 class="title">Centrum Centrum Multivitamin Supplement Tablets</h3>
+                                            <div class="cart">
+                                                <div class="price">
+                                                    <div class="vert">
+                                                        <div class="price_new">$12.97</div>
+                                                        <div class="price_old">$13.99</div>
+                                                    </div>
+                                                </div>
+                                                <a href="compare login.html" class="obn"></a>
+                                                <a href="wishlist login.html" class="like"></a>
+                                                <a href="shopping_cart login.html" class="bay"></a>
+                                            </div><!-- .cart -->
+                                        </div><!-- .grid_3 -->
+                                    </li>
+                                    
+                                    <li class="">
+                                        <div class="grid_3 product">
+                                            <img class="sale" src="images/sale.png" alt="Sale"/>
+                                            <div class="prev">
+                                                <a href="product_page2 login.html"><img src="images/product2/product_slid.png" alt="" title="" /></a>
+                                            </div><!-- .prev -->
+                                            <h3 class="title">21st Century Niacin 500 Mg Flush Free Capsules, 110-Count</h3>
+                                            <div class="cart">
+                                                <div class="price">
+                                                    <div class="vert">
+                                                        <div class="price_new">$7.49</div>
+                                                        <div class="price_old">$9.80</div>
+                                                    </div>
+                                                </div>
+                                                <a href="compare login.html" class="obn"></a>
+                                                <a href="wishlist login.html" class="like"></a>
+                                                <a href="shopping_cart login.html" class="bay"></a>
+                                            </div><!-- .cart -->
+                                        </div><!-- .grid_3 -->
+                                    </li>
+                                    
+                                    <li class="">
+                                        <div class="grid_3 product">                                            <img class="sale" src="images/sale.png" alt="Sale"/>
+                                            <div class="prev">
+                                                <a href="product_page3 login.html"><img src="images/product3/product_slid.png" alt="" title="" /></a>
+                                            </div><!-- .prev -->
+                                            <h3 class="title">Tucks Medicated Hemorrhoid Cooling Pads 40 ea</h3>
+                                            <div class="cart">
+                                                <div class="price">
+                                                    <div class="vert">
+                                                        <div class="price_new">$7.99</div>
+                                                        <div class="price_old">$10.00</div>
+                                                    </div>
+                                                </div>
+                                                <a href="compare login.html" class="obn"></a>
+                                                <a href="wishlist login.html" class="like"></a>
+                                                <a href="shopping_cart login.html" class="bay"></a>
+                                            </div><!-- .cart -->
+                                        </div><!-- .grid_3 -->
+                                    </li>
+                                    
+                                    <li class="">
+                                        <div class="grid_3 product">
+                                            <img class="sale" src="images/sale.png" alt="Sale"/>
+                                            <div class="prev">
+                                                <a href="#"><img src="images/product5/product_slid.png" alt="" title="" /></a>
+                                            </div><!-- .prev -->
+                                            <h3 class="title">Benadryl Dye-Free Allergy Relief, Liqui-gels</h3>
+                                            <div class="cart">
+                                                <div class="price">
+                                                    <div class="vert">
+                                                        <div class="price_new">$4.99</div>
+                                                    </div>
+                                                </div>
+                                                <a href="compare login.html" class="obn"></a>
+                                                <a href="wishlist login.html" class="like"></a>
+                                                <a href="shopping_cart login.html" class="bay"></a>
+                                            </div><!-- .cart -->
+                                        </div><!-- .grid_3 -->
+                                    </li>
+                                </ul><!-- #list_product -->
+                                
+                            </div><!-- .list_carousel -->
+                        </div><!-- .carousel -->
+                    </div><!-- .product_page -->
+                    <div class="clear"></div>
+                    
+                </div><!-- #content -->
+                
+                <div class="clear"></div>
+                
+            </div><!-- .container_12 -->
+        </section><!-- #main -->
+        
+        <div class="clear"></div>
+        
+<iframe name="footer" width=100% height=383px marginwidth=0 marginheight=0 src="footer.html" ></iframe>
+        
+    </body>
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>
