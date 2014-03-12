@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>zSpot</display-name>
+	<description>Let's explore the world.</description>
+	<servlet>
+		<servlet-name>controller-servlet</servlet-name>
+		<servlet-class>controller.Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controller-servlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>image-servlet</servlet-name>
+		<servlet-class>utility.ImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>image-servlet</servlet-name>
+		<url-pattern>/image</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>homepage.do</welcome-file>
+	</welcome-file-list>
+</web-app>
